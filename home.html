@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valley Academy Schools</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="https://previews.dropbox.com/p/thumb/AB6PYM0Ggm2lBuT5x3yfaxnRcxJRDZfijdK27VJOwvYsnD5LCIKXDnbPYDjnnq0O_OlvGzIGXw0o6Obss8CH4-PjmkWebtj-Mpf4UI86sUqKwwpy50VKLGTp9aCbGy2GCGjZ6-QQsfbCZfEuAssHKRt7zO2jbILUZgJbVcfCGZbdlkT1FrmsjVKRKHq7CdBgmBlci_fBPndumpxPxJ2dERWoxrwrN1HKHCZskYffM1lV_R3YUI2DGWtijpCPfJsEz4C6fEGDYCNAOqJX_POqRj6EElqSnRpy_2E018M4a_9jALM3Ir0YtJ4nNTGuWW2zep8kjC-GGDy0Lh43_hHmHflnPSdhDBsVqgfMScWUbYF6S09w7xyone_CkQ-VUQbzbQU/p.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <style>
+    body {
+      background-image: url(/images/valleyview.avif);
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+      color: white; /* Ensure header text is readable */
+    }
+
+    .container {
+      display: flex; /* Use flexbox to align children side by side */
+      min-height: 100vh; /* Full height */
+    }
+
+    .sidebar {
+      width: 280px; /* Fixed width for sidebar */
+      background-color: #f8f9fa; /* Light background for sidebar */
+      padding: 1rem; /* Add some padding */
+    }
+
+    .main-content {
+      flex-grow: 1; /* Allow this section to grow */
+      padding: 1rem; /* Add some padding */
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #10375C; /* Set the background color for cards */
+      color: white; /* Change text color to white */
+      transition: transform 0.3s; /* Add transition for hover effect */
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column; /* Align items in a column */
+      justify-content: center; /* Center items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text */
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .custom-font {
+      font-family: 'Alex Brush', cursive;
+      font-size: 80px;
+      padding-top: 20px;
+      color: #EC8305;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05); /* Scale up the card on hover */
+      transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+    }
+
+    .text-center {
+      margin-top: 10px; /* Adjust this value as needed */
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #10375C;
+      color: white;
+    }
+    .sidebar {
+      background-color: #EC8305; /* Set background color for sidebar */
+      width: 280px; /* Set a fixed width for the sidebar */
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4" style="font-family: 'Alex Brush'; color: #399918; font-weight: bold; margin-left: 0px; line-height: 50px; font-size: 50px !important;">Valley Academy</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li>
+          <a href="commerce.html" class="nav-link link-body-emphasis">
+            Commerce
+          </a>
+        </li>
+        <li>
+          <a href="science.html" class="nav-link link-body-emphasis">
+            Sciences
+          </a>
+        </li>
+        <li>
+          <a href="human-sciences.html" class="nav-link link-body-emphasis">
+            Human Sciences
+          </a>
+        </li>
+        <li>
+          <a href="languages.html" class="nav-link link-body-emphasis">
+            Languages
+          </a>
+        </li>
+        <li>
+          <a href="tech-eng.html" class="nav-link link-body-emphasis">
+            Technology & Engineering
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link active" aria-current="page">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="btn btn-danger">
+              <i class="fas fa-sign-out-alt"></i> Logout
+          </a>
+      </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./images/va-logo.png" alt="" width="92" height="52" class="rounded-circle me-2">
+          <strong>Valley Academy</strong>
+        </a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <!-- Inside the main-content div -->
+
+<!-- Inside the main-content div -->
+
+<div class="row gy-4 flex-container">
+  <!-- Card 1: School of Tech & Eng. -->
+  <div class="col-md-3 col-sm-6"> <!-- Change col-md-4 to col-md-3 -->
+    <div class="card" style="width: 15rem; margin-bottom: 20px;"> <!-- Add margin-bottom -->
+      <img src="./images/deer-5.png" class="card-img-top" alt="tech-deer" style="width: 100%; height: 150px;"> <!-- Adjust height -->
+      <div class="card-body" style="padding: 0.5rem;"> <!-- Add some padding -->
+        <h5 class="card-title" style="font-size: 1.1rem;">School of Tech & Eng.</h5> <!-- Adjust font size -->
+        <a href="tech-eng.html" class="btn btn-primary btn-sm">Enter School</a> <!-- Change button size -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat for other cards, adding margin-bottom to each card -->
+
+  <!-- Card 2: School of Commerce -->
+  <div class="col-md-3 col-sm-6">
+    <div class="card" style="width: 15rem; margin-bottom: 20px;">
+      <img src="./images/deer-1.png" class="card-img-top" alt="commerce-deer" style="width: 100%; height: 150px;">
+      <div class="card-body" style="padding: 0.5rem;">
+        <h5 class="card-title" style="font-size: 1.1rem;">School of Commerce</h5>
+        <a href="commerce.html" class="btn btn-primary btn-sm">Enter School</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3: School of Human Sciences -->
+  <div class="col-md-3 col-sm-6">
+    <div class="card" style="width: 15rem; margin-bottom: 20px;">
+      <img src="./images/deer-8.png" class="card-img-top" alt="human-sciences-deer" style="width: 100%; height: 150px;">
+      <div class="card-body" style="padding: 0.5rem;">
+        <h5 class="card-title" style="font-size: 1.1rem;">School of Human Sciences</h5>
+        <a href="human-sciences.html" class="btn btn-primary btn-sm">Enter School</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4: School of Languages -->
+  <div class="col-md-3 col-sm-6">
+    <div class="card" style="width: 15rem; margin-bottom: 20px;">
+      <img src="./images/deer-9.png" class="card-img-top" alt="languages-deer" style="width: 100%; height: 150px;">
+      <div class="card-body" style="padding: 0.5rem;">
+        <h5 class="card-title" style="font-size: 1.1rem;">School of Languages</h5>
+        <a href="languages.html" class="btn btn-primary btn-sm">Enter School</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5: School of Sciences -->
+  <div class="col-md-3 col-sm-6">
+    <div class="card" style="width: 15rem; margin-bottom: 20px;">
+      <img src="./images/deer-6.png" class="card-img-top" alt="sciences-deer" style="width: 100%; height: 150px;">
+      <div class="card-body" style="padding: 0.5rem;">
+        <h5 class="card-title" style="font-size: 1.1rem;">School of Sciences</h5>
+        <a href="science.html" class="btn btn-primary btn-sm">Enter School</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 6: School of Arts -->
+  <div class="col-md-3 col-sm-6">
+    <div class="card" style="width: 15rem; margin-bottom: 20px;">
+      <img src="./images/tech-deer.jpg" class="card-img-top" alt="arts-deer" style="width: 100%; height: 150px;">
+      <div class="card-body" style="padding: 0.5rem;">
+        <h5 class="card-title" style="font-size: 1.1rem;">School of Arts</h5>
+        <a href="#" class="btn btn-primary btn-sm">No Entry</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
